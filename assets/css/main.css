@@ -1163,7 +1163,7 @@ h6 {
   font-size: 14px;
   background-color: var(--color-secondary);
   border: 1px solid ;
-  color: #fff;
+  color: rgb(30, 61, 89, 00.3);
 }
 
 .contact .php-email-form input {
