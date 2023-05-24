@@ -19,9 +19,9 @@
 
 /* Colors */
 :root {
-  --color-default: #fafafa;
-  --color-primary: #27a776;
-  --color-secondary: #161718;
+  --color-default: #1e3d59;
+  --color-primary: #ff6e40;
+  --color-secondary: #f5f0e1;
 }
 
 /* Smooth scroll behavior */
@@ -35,7 +35,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
-  background-color: #000;
+  background-color: #f5f0e1;
 }
 
 a {
@@ -44,7 +44,7 @@ a {
 }
 
 a:hover {
-  color: #32cf93;
+  color: #1e3d59;
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ h6 {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #5bd9a9;
+  background: #1e3d59;
   margin: 4px 10px;
 }
 
@@ -91,7 +91,7 @@ h6 {
   font-size: 36px;
   font-weight: 700;
   font-family: var(--font-secondary);
-  color: #fff;
+  color: #1e3d59;
 }
 
 
@@ -107,7 +107,7 @@ h6 {
 .page-header h2 {
   font-size: 56px;
   font-weight: 500;
-  color: #fff;
+  color: #1e3d59;
   font-family: var(--font-secondary);
 }
 
@@ -118,7 +118,7 @@ h6 {
 }
 
 .page-header p {
-  color: rgba(255, 255, 255, 0.8);
+  color: #1e3d59;
 }
 
 .page-header .cta-btn {
@@ -136,7 +136,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #2cbc85;
+  background: #1e3d59;
 }
 
 /*--------------------------------------------------------------
@@ -163,7 +163,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: #1e3d59;
   color: #fff;
 }
 
@@ -214,7 +214,7 @@ h6 {
 #preloader .line:before {
   content: "";
   position: absolute;
-  background-color: #fff;
+  background-color: #ff6e40;
   left: 0;
   top: 50%;
   width: 1px;
@@ -287,7 +287,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 30px 0;
-  background-color: #000;
+  background-color: #f5f0e1;
 }
 
 .header .logo {
@@ -303,7 +303,7 @@ h6 {
   font-size: 32px;
   margin: 0;
   font-weight: 400;
-  color: #fff;
+  color: #1e3d59;
   font-family: var(--font-secondary);
 }
 
@@ -324,20 +324,20 @@ h6 {
 }
 
 .header .header-social-links {
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .header .header-social-links a {
-  color: rgba(255, 255, 255, 0.5);
+  color: #ff6e40;
   padding-left: 15px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 32px;
 }
 
 .header .header-social-links a:hover {
-  color: #fff;
+  color: #1e3d59;
 }
 
 @media (max-width: 575px) {
@@ -377,7 +377,7 @@ h6 {
     letter-spacing: 1px;
     font-size: 13px;
     font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
+    color: #1e3d59;
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -393,7 +393,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #fff;
+    color: #ff6e40;
   }
 
   .navbar .dropdown ul {
@@ -937,7 +937,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  color: #5bd9a9;
+  color: #1e3d59;
   font-size: 26px;
   line-height: 0;
 }
@@ -985,7 +985,7 @@ h6 {
 
 .services .service-item i {
   background: var(--color-primary);
-  color: #fff;
+  color: #1e3d59;
   font-size: 24px;
   transition: 0.3s;
   display: flex;
@@ -1004,7 +1004,7 @@ h6 {
 }
 
 .services .service-item h4 a {
-  color: #fff;
+  color: #1e3d59;
 }
 
 .services .service-item p {
@@ -1071,7 +1071,7 @@ h6 {
   float: left;
   width: 44px;
   height: 44px;
-  background: #222425;
+  background: #1e3d59;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1085,14 +1085,14 @@ h6 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #1e3d59;
 }
 
 .contact .info-item p {
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
-  color: #fff;
+  color:#1e3d59;
 }
 
 .contact .info-item:hover i {
@@ -1178,7 +1178,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(39, 167, 118, 0.8);
+  background: #1e3d59;
 }
 
 @keyframes animate-loading {
@@ -1197,7 +1197,7 @@ h6 {
 .hero {
   width: 100%;
   min-height: 30vh;
-  background: #000;
+  background: #f5f0e1;
   background-size: cover;
   position: relative;
   padding: 140px 0 60px 0;
@@ -1207,7 +1207,7 @@ h6 {
   margin: 0 0 10px 0;
   font-size: 38px;
   font-weight: 700;
-  color: #fff;
+  color: #1e3d59;
   font-family: var(--font-secondary);
 }
 
@@ -1230,7 +1230,7 @@ h6 {
 }
 
 .hero p {
-  color: rgba(255, 255, 255, 0.6);
+  color: #1e3d59;
   margin-bottom: 30px;
   font-size: 18px;
 }
@@ -1245,12 +1245,12 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #fff;
+  color: #1e3d59;
   background: var(--color-primary);
 }
 
 .hero .btn-get-started:hover {
-  background: #2cbc85;
+  background: #ff6e40;
 }
 
 @media (max-width: 768px) {
