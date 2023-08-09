@@ -8,6 +8,12 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
+
+    // Disable right-click
+    document.addEventListener("contextmenu", function(e) {
+      e.preventDefault();
+    });
+  
   /**
    * Preloader
    */
@@ -170,5 +176,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
+
+
+  
 
 });
