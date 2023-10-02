@@ -609,11 +609,11 @@ h6 {
 
 body.about-page {
   background-image: url("../img/gallery/25.jpg");
-  background-size: cover;
+  background-size: cover; /* Rend l'image de fond responsive */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: #ebeff0;
-  
+  font-family: Arial, sans-serif;
+  background-position: center; /* Centre l'image de fond */
 }
 
 .about .content ul {
@@ -1011,6 +1011,7 @@ body.contact-page {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center; /* Centre l'image de fond */
 }
 
 .contact .info-item i {
