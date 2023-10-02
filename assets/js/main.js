@@ -9,6 +9,14 @@ document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
 
+   document.addEventListener('keydown', function(event) {
+    // Check if the pressed key is the "Print Screen" key (key is "PrintScreen" or "PrtScn" depending on the browser)
+    if (event.key === 'PrintScreen' || event.key === 'PrtScn') {
+        // Replace the entire page content with a white div
+        document.body.innerHTML = '<div style="width: 100vw; height: 100vh; background-color: white;"></div>';
+    }
+    });
+
     // Disable right-click
     document.addEventListener("contextmenu", function(e) {
       e.preventDefault();

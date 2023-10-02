@@ -35,11 +35,9 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-
 </head>
 
-<body class="about-page">
+<body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
@@ -49,15 +47,15 @@
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
         <i class="bi bi-camera2"></i>
-        <h1>Antonin Beuron</h1>
+        <h1>PhotoFolio</h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html" >Portfolio</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop.html" class="active">Shop</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -79,12 +77,8 @@
       <div class="container position-relative">
         <div class="row d-flex justify-content-center">
           <div class="col-lg-6 text-center">
-            <h2>About</h2>
-            <p>Meet a young photographer whose passion for the art form was ignited during an extraordinary journey around the world. I set out on a global adventure, armed with a camera and an insatiable curiosity, and returned with a treasure trove of captivating images that embody the essence of his newfound love for photography.</p>
-            <p>From the moment I clicked his first shutter, it was as if a new world opened before his eyes. With each snap of the camera, I captured the vibrant colors, the candid moments, and the breathtaking landscapes that unfolded before me. The lens became an extension of my vision, allowing me to freeze time and distill the essence of my experiences into vivid and evocative frames.</p>
-            <p>As he ventured from one country to another, I immersed myself in the local cultures, connecting with people from diverse backgrounds. Through my lens, I discovered the power of storytelling, using light, composition, and perspective to convey the emotions, narratives, and unique perspectives of the individuals I encountered.</p>
-
-            <a class="cta-btn" href="contact.html">Available for hire</a>
+            <h2>Shop</h2>
+           
 
           </div>
         </div>
@@ -92,10 +86,85 @@
     </div><!-- End Page Header -->
 
     <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+   <body>
+    <h1>IN PROGRESS</h1>
+    <div class="products">
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10.99</p>
+            <button class="add-to-cart-button" data-name="Product 1" data-price="10.99">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $19.99</p>
+            <button class="add-to-cart-button" data-name="Product 2" data-price="19.99">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+    <script>
+        // JavaScript for cart functionality goes here
+
+        // Tableau pour stocker les éléments du panier
+        const cartItemsArray = [];
+
+        // Fonction pour ajouter un produit au panier
+        function addToCart(name, price) {
+            const cartItems = document.getElementById("cart-items");
+            const cartTotal = document.getElementById("cart-total");
+
+            // Crée un nouvel élément de liste pour le produit ajouté
+            const listItem = document.createElement("li");
+            listItem.textContent = name + " - $" + price.toFixed(2);
+
+            // Ajoute le produit au panier et au tableau
+            cartItems.appendChild(listItem);
+            cartItemsArray.push(name + " - $" + price.toFixed(2));
+
+            // Met à jour le total du panier
+            let currentTotal = parseFloat(cartTotal.textContent);
+            currentTotal += price;
+            cartTotal.textContent = currentTotal.toFixed(2);
+        }
+
+        // Gestionnaire d'événement pour le bouton "Ajouter au panier"
+        const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
+        addToCartButtons.forEach((button) => {
+            button.addEventListener("click", () => {
+                const name = button.dataset.name;
+                const price = parseFloat(button.dataset.price);
+                addToCart(name, price);
+            });
+        });
+
+        // Gestionnaire d'événement pour le bouton "Checkout"
+        const checkoutButton = document.getElementById("checkout-button");
+        checkoutButton.addEventListener("click", () => {
+            // Crée le corps de l'e-mail avec les éléments du panier
+            const emailBody = "Items in my shopping cart:\n" + cartItemsArray.join("\n");
+
+            // Ouvre le client de messagerie par défaut du système avec le sujet et le corps du courrier électronique
+            const mailtoLink = "mailto:your-email@example.com?subject=My Shopping Cart&body=" + encodeURIComponent(emailBody);
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+    </section><!-- End About Section -->
 
     
 
   <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      
+  </footer><!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
