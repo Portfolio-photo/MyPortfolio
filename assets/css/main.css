@@ -109,8 +109,8 @@ h6 {
 # Page Header
 --------------------------------------------------------------*/
 .page-header {
-  padding: 120px 0 60px 0;
-  min-height: 30vh;
+  padding: 90px 0 30px 0;
+  min-height: 10vh;
   position: relative;
 }
 
@@ -141,7 +141,7 @@ h6 {
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #fff;
+  color: #ffffff;
   background: var(--color-primary);
 }
 
@@ -297,8 +297,10 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 30px 0;
-  background-color: #ebeff0;
+  background-color: transparent;
+  
 }
+
 
 .header .logo {
   transition: 0.3s;
@@ -338,7 +340,7 @@ h6 {
 }
 
 .header .header-social-links a {
-  color: #8596a6;
+  color: #072d52;
   padding-left: 15px;
   display: inline-block;
   line-height: 0px;
@@ -347,7 +349,7 @@ h6 {
 }
 
 .header .header-social-links a:hover {
-  color: #072d52;
+  color: #8596a6;
 }
 
 @media (max-width: 575px) {
@@ -355,6 +357,9 @@ h6 {
     padding-left: 5px;
   }
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Desktop Navigation
@@ -403,7 +408,7 @@ h6 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #8596a6;
+    color: #ffffff;
   }
 
   .navbar .dropdown ul {
@@ -608,13 +613,15 @@ h6 {
 }
 
 body.about-page {
-  background-image: url("../img/gallery/25.jpg");
+  background-image: url("../img/25.jpg");
   background-size: cover; /* Rend l'image de fond responsive */
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: Arial, sans-serif;
   background-position: center; /* Centre l'image de fond */
 }
+
+
 
 .about .content ul {
   list-style: none;
@@ -1007,7 +1014,7 @@ body.about-page {
 }
 
 body.contact-page {
-  background-image: url("../img/gallery/8.jpg");
+  background-image: url("../img/3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
