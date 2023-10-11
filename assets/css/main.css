@@ -78,8 +78,8 @@ h2 {
   margin: 0 auto; /* Ajoutez cette propriété pour centrer le bloc (le titre h2) horizontalement */
   padding-top: 11%; /* Ajoutez de la marge au-dessus du titre (ajustez selon vos besoins) */
   padding-bottom: 0.1%; /* Ajoutez de la marge en dessous du titre (ajustez selon vos besoins) */
-  opacity: 1;
-  font-family: "Cloud Dancer", sans-serif;
+  opacity: 0.5;
+  font-family: "Butler Stencil", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -126,7 +126,6 @@ h2 {
 .page-header {
   padding: 90px 0 30px 0;
   min-height: 10vh;
-  position: relative;
 }
 
 .page-header h2 {
@@ -140,8 +139,11 @@ h2 {
   .page-header h2 {
     font-size: 36px;
   }
-}
 
+  .page-header {
+    min-height: auto; /* Remove the minimum height */
+  }
+}
 .page-header p {
   color: #072d52;
 }
@@ -149,20 +151,24 @@ h2 {
 .page-header .cta-btn {
   font-family: var(--font-primary);
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   display: inline-block;
   padding: 12px 40px;
   border-radius: 4px;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: 0.3s;
-  color: #ffffff;
+  color: #D4BE79;
   background: var(--color-d);
+;
 }
 
+
 .page-header .cta-btn:hover {
-  background: #D4BE79;
+  color: #072d52; /* Change the text color on hover */
 }
+
+
 
 /*--------------------------------------------------------------
 # Scroll top button
