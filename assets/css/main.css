@@ -11,6 +11,17 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+
+
+@font-face {
+  font-family: 'Tenar Black';
+  src: url('../../font/TenarBlack.ttf') format('truetype');
+  font-family: 'Butler Stencil';
+  src: url('../../font/Butler_Black_Stencil.ttf') format('truetype');
+
+}
+
+
 :root {
   --font-default: "Tenar Black", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-primary: "Tenar Black", sans-serif;
@@ -19,6 +30,7 @@
 
 p {
   font-family: "Tenar Black", sans-serif;
+  font-size: 12px;
 }
 
 /* Colors */
@@ -81,6 +93,19 @@ h2 {
   opacity: 0.5;
   font-family: "Butler Stencil", sans-serif;
 }
+
+
+h3 {
+  color: #072d52;
+  text-align: center; /* Ajoutez cette propriété pour centrer le texte horizontalement */
+  margin: 0 auto; /* Ajoutez cette propriété pour centrer le bloc (le titre h2) horizontalement */
+  padding-top: 15%; /* Ajoutez de la marge au-dessus du titre (ajustez selon vos besoins) */
+  padding-bottom: 0.1%; /* Ajoutez de la marge en dessous du titre (ajustez selon vos besoins) */
+  opacity: 1;
+  font-family: "Ink Free", sans-serif;
+  font-size: 40px;
+}
+
 
 /*--------------------------------------------------------------
 # Sections & Section Header
@@ -317,13 +342,14 @@ h2 {
 .header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 30px 0;
+  padding: 0px 0;
   background-color: transparent;
   
 }
 
 .header.white {
   background-color: #ebeff0; /* Change the background color to white */
+  margin-bottom: 200000px
 }
 
 .header .logo {
@@ -1166,7 +1192,7 @@ body.contact-page {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--color-primary);
+  background: var(--color-default);
   border: 0;
   padding: 10px 35px;
   color: #fff;
@@ -1175,7 +1201,7 @@ body.contact-page {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #072d52;
+  background: #D4BE79;
 }
 
 @keyframes animate-loading {

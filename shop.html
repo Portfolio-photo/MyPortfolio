@@ -1,187 +1,211 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>About</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>Shop</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: PhotoFolio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Your custom styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ebeff0;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 20px; /* Ajoutez un espace autour des produits pour éviter le débordement */
+        }
+
+        .product {
+            width: calc(25% - 10px);
+            margin: 5px;
+            background-color: #ebeff0;
+            text-align: center;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .button {
+  background: #072d52;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+  font-family: "Tenar Black", sans-serif;
+}
+
+.button:hover {
+  background: #D4BE79;
+}
+
+
+        @media screen and (max-width: 768px) {
+            .product-container {
+                flex-direction: column;
+            }
+
+            .product {
+                width: 100%;
+            }
+        }
+
+    </style>
+    <!-- End custom styles -->
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="header d-flex align-items-center fixed-top white">
+        <div class="container-fluid d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center  me-auto me-lg-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <i class="bi bi-camera2"></i>
-        <h1>PhotoFolio</h1>
-      </a>
+            <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+                <!-- Uncomment the line below if you also wish to use an image logo -->
+                <!-- <img src="assets/img/logo.png" alt=""> -->
+            </a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html" >Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="shop.html" class="active">Shop</a></li>
-        </ul>
-      </nav><!-- .navbar -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shop.html" class="active">Shop</a></li>
+                </ul>
+            </nav><!-- .navbar -->
 
-      <div class="header-social-links">
-        <a href="https://www.instagram.com/antobeuron" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="https://twitter.com/AntoBeuron" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="mailto:mathias.gianotti97@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+            <div class="header-social-links">
+                <a href="https://www.instagram.com/antobeuron/" class="instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://twitter.com/AntoBeuron/" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="mailto:mathias.gianotti97@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+            </div>
+            <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+            <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+        </div>
+    </header>
+
+    <div class="product-container">
+      <div class="product">
+          <h3>Gino</h3>
+          <img src="assets/img/shop/Gino.png" alt="Gino" style="width: 60%; height: 60%;" class="img-fluid" >
+          <p>Description du produit 1.</p>
+          <p>Prix : 20.00 €</p>
+          <button onclick="Order('Gino', 20.00)" class="button">Order</button>
+          <button onclick="window.location.href='shop/Gino.html'" class="button">Preview</button>
       </div>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-    </div>
-  </header><!-- End Header -->
-
-  <main id="main" data-aos="fade" data-aos-delay="1500">
-
-    <!-- ======= End Page Header ======= -->
-    <div class="page-header d-flex align-items-center">
-      <div class="container position-relative">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-6 text-center">
-            <h2>Shop</h2>
-           
-
-          </div>
-        </div>
+      <div class="product">
+          <h3>Kodak Gold</h3>
+          <img src="assets/img/shop/Kodak Gold.png" alt="Produit 2" style="width: 60%; height: 60%;" class="img-fluid">
+          <p>Description du produit 2.</p>
+          <p>Prix : 25.00 €</p>
+          <button onclick="Order('Kodak Gold', 25.00)"class="button">Order</button>
+          <button onclick="window.location.href='shop/Kodak_gold.html'" class="button">Preview</button>
       </div>
-    </div><!-- End Page Header -->
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-   <body>
-    <h1>IN PROGRESS</h1>
-    <div class="products">
-        <div class="product">
-            <h2>Product 1</h2>
-            <p>Price: $10.99</p>
-            <button class="add-to-cart-button" data-name="Product 1" data-price="10.99">Add to Cart</button>
-        </div>
-        <div class="product">
-            <h2>Product 2</h2>
-            <p>Price: $19.99</p>
-            <button class="add-to-cart-button" data-name="Product 2" data-price="19.99">Add to Cart</button>
-        </div>
-    </div>
-    <div class="cart">
-        <h2>Shopping Cart</h2>
-        <ul id="cart-items">
-            <!-- Cart items will be displayed here -->
-        </ul>
-        <p>Total: $<span id="cart-total">0.00</span></p>
-        <button id="checkout-button">Checkout</button>
-    </div>
-    <script>
-        // JavaScript for cart functionality goes here
 
-        // Tableau pour stocker les éléments du panier
-        const cartItemsArray = [];
+     
 
-        // Fonction pour ajouter un produit au panier
-        function addToCart(name, price) {
-            const cartItems = document.getElementById("cart-items");
-            const cartTotal = document.getElementById("cart-total");
-
-            // Crée un nouvel élément de liste pour le produit ajouté
-            const listItem = document.createElement("li");
-            listItem.textContent = name + " - $" + price.toFixed(2);
-
-            // Ajoute le produit au panier et au tableau
-            cartItems.appendChild(listItem);
-            cartItemsArray.push(name + " - $" + price.toFixed(2));
-
-            // Met à jour le total du panier
-            let currentTotal = parseFloat(cartTotal.textContent);
-            currentTotal += price;
-            cartTotal.textContent = currentTotal.toFixed(2);
-        }
-
-        // Gestionnaire d'événement pour le bouton "Ajouter au panier"
-        const addToCartButtons = document.querySelectorAll(".add-to-cart-button");
-        addToCartButtons.forEach((button) => {
-            button.addEventListener("click", () => {
-                const name = button.dataset.name;
-                const price = parseFloat(button.dataset.price);
-                addToCart(name, price);
-            });
-        });
-
-        // Gestionnaire d'événement pour le bouton "Checkout"
-        const checkoutButton = document.getElementById("checkout-button");
-        checkoutButton.addEventListener("click", () => {
-            // Crée le corps de l'e-mail avec les éléments du panier
-            const emailBody = "Items in my shopping cart:\n" + cartItemsArray.join("\n");
-
-            // Ouvre le client de messagerie par défaut du système avec le sujet et le corps du courrier électronique
-            const mailtoLink = "mailto:your-email@example.com?subject=My Shopping Cart&body=" + encodeURIComponent(emailBody);
-            window.location.href = mailtoLink;
-        });
-    </script>
-</body>
-    </section><!-- End About Section -->
-
-    
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="container">
-      
-  </footer><!-- End Footer -->
-
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <div id="preloader">
-    <div class="line"></div>
+    <div class="product">
+      <h3>Solitude</h3>
+      <img src="assets/img/shop/Solitude.png" alt="Produit 3" style="width: 60%; height: 60%;" class="img-fluid">
+      <p>Description du produit 3.</p>
+      <p>Prix : 30.00 €</p>
+      <button onclick="Order('Solitude', 30.00)"class="button">Order</button>
+      <button onclick="window.location.href='shop/Solitude.html'" class="button">Preview</button>
   </div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <div class="product">
+      <h3>Slumber of the Dead</h3>
+      <img src="assets/img/shop/Slumber of the Dead.png" alt="Produit 2" style="width: 60%; height: 60%;" class="img-fluid">
+      <p>Description du produit 2.</p>
+      <p>Prix : 25.00 €</p>
+      <button onclick="Order('Slumber of the Dead', 25.00)"class="button">Order</button>
+      <button onclick="window.location.href='shop/Slumber_of_the_dead.html'" class="button">Preview</button>
+  </div>
 
+
+      <div class="product">
+          <h3>Pink Dusk</h3>
+          <img src="assets/img/shop/Pink Dusk.png" alt="Produit 3" style="width: 60%; height: 60%;" class="img-fluid">
+          <p>Description du produit 3.</p>
+          <p>Prix : 30.00 €</p>
+          <button onclick="Order('Pink Dusk', 30.00)"class="button">Order</button>
+          <button onclick="window.location.href='shop/Pink_dusk.html'" class="button">Preview</button>
+      </div>
+
+      <div class="product">
+          <h3>Space Break</h3>
+          <img src="assets/img/shop/Space Break.png" alt="Produit 4" style="width: 60%; height: 60%;" class="img-fluid">
+          <p>Description du produit 4.</p>
+          <p>Prix : 15.00 €</p>
+          <button onclick="Order('Space Break', 15.00)"class="button">Order</button>
+          <button onclick="window.location.href='shop/Space_break.html'" class="button">Preview</button>
+      </div>
+
+      
+      <div class="product">
+        <h3>Ordre Félin</h3>
+        <img src="assets/img/shop/Ordre Félin.png" alt="Produit 5" style="width: 60%; height: 60%;" class="img-fluid" >
+        <p>Description du produit 5.</p>
+        <p>Prix : 20.00 €</p>
+        <button onclick="Order('Ordre Félin', 20.00)"class="button">Order</button>
+        <button onclick="window.location.href='shop/Ordre_felin.html'" class="button">Preview</button>
+    </div>
+
+   
+
+      <div class="product">
+          <h3>Táo Bao</h3>
+          <img src="assets/img/shop/Táo Bạo.png" alt="Produit 4" style="width: 60%; height: 60%;" class="img-fluid">
+          <p>Description du produit 4.</p>
+          <p>Prix : 15.00 €</p>
+          <button onclick="Order('Táo Bao', 15.00)"class="button">Order</button>
+          <button onclick="window.location.href='shop/tao_bao.html'" class="button">Preview</button>
+      </div>
+
+  <script>
+      // Nouvelle fonction pour commander avec le nom de l'image par e-mail
+      function Order(productName, price) {
+            // Crée le corps de l'e-mail avec les détails du produit
+            const emailBody = `Product Name: ${productName}\nPrice: ${price} €`;
+
+            // Ouvre le client de messagerie par défaut avec le sujet et le corps du courrier électronique pré-remplis
+            const mailtoLink = `mailto:your-email@example.com?subject=Order Request for ${productName}&body=${encodeURIComponent(emailBody)}`;
+            window.location.href = mailtoLink;
+        }
+  </script>
 </body>
-
 </html>
