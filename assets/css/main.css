@@ -580,6 +580,7 @@ h4 {
     padding: 50px 0 10px 0;
     margin: 0;
     background: #072d52;
+    opacity: 0.5;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
@@ -612,7 +613,7 @@ h4 {
   .navbar .active,
   .navbar .active:focus,
   .navbar li:hover>a {
-    color: #D4BE79;
+    color: #fcc621;
   }
 
   .navbar .dropdown ul,
