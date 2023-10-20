@@ -1,9 +1,24 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Produit Gino</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        @media (max-width: 767px) { /* Styles uniquement pour les écrans de largeur maximale 767px (typiquement mobile) */
+            img {
+                width: 100%;
+                height: 100vh;
+                object-fit: cover; /* Pour maintenir le rapport hauteur/largeur */
+            }
+        }
+    </style>
 </head>
 <body>
-    <img src="../assets/img/shop/Gino.png" alt="Gino" style="max-width: 100%; height: auto;">
+    <img src="../assets/img/shop/Gino.png" alt="Gino">
     <!-- Ajoutez d'autres détails sur le produit ici -->
 </body>
 </html>
