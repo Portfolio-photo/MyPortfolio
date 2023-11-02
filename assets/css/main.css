@@ -685,7 +685,6 @@ h4 {
 }
 
 body.about-page {
-  background-image: url("../img/25.jpg");
   background-size: cover; /* Rend l'image de fond responsive */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -693,6 +692,19 @@ body.about-page {
   background-position: center; /* Centre l'image de fond */
 }
 
+/* Media Query pour les appareils mobiles */
+@media screen and (max-width: 550px) {
+  body.about-page {
+    background-image: url("../img/24.jpg");
+  }
+}
+
+/* Media Query pour les écrans plus larges */
+@media screen and (min-width: 550px) {
+  body.about-page {
+    background-image: url("../img/25.jpg");
+  }
+}
 
 
 .about .content ul {
